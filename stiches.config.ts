@@ -1,0 +1,31 @@
+import { createStitches } from "@stitches/react";
+
+export const {
+    styled,
+    css,
+    globalCss,
+    keyframes,
+    getCssText,
+    theme,
+    createTheme,
+    config
+} = createStitches({
+
+    theme:{
+
+        colors:{
+            black:'rgb(20,20,20)',
+            white:'rgb(255,255,255)',
+            whiteHalfOpacity:'rgba(255,255,255,0.5)',
+            gray:'rgb(60,60,60)',
+            darkGray:'rgb(25,25,25)'
+        }
+    },
+
+    media:{
+
+        desktop:'(min-width:801px)',
+        tablet:'(max-width:800px)',
+        mobile:'(max-width:480px)'
+    }
+});
