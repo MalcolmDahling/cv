@@ -38,11 +38,12 @@ const Background = styled('div', {
     flexDirection:'column',
     justifyContent:'center',
     alignItems:'center',
+    gap:20,
 
     backgroundColor:'black',
 
-    animation:`${FadeOut} 1000ms forwards`,
-    animationDelay:'5500ms',
+    // animation:`${FadeOut} 1000ms forwards`,
+    // animationDelay:'5500ms',
 });
 
 
