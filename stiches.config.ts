@@ -18,7 +18,7 @@ export const {
             white:'rgb(255,255,255)',
             whiteHalfOpacity:'rgba(255,255,255,0.5)',
             gray:'rgb(60,60,60)',
-            darkGray:'rgb(25,25,25)'
+            darkGray:'rgb(20,20,20)'
         },
 
         space:{
