@@ -16,9 +16,9 @@ const Div = styled('div', {
 
     '@mobile':{
         maxWidth:'100%',
-        paddingRight:10,
-        paddingLeft:10,
-        marginBottom:10,
+        paddingRight:'$1',
+        paddingLeft:'$1',
+        marginBottom:'$1',
     }
 });
 

@@ -4,7 +4,6 @@ import { styled } from "../../../stiches.config";
 const Div = styled('div', {
 
     display:'flex',
-    gap:10,
     justifyContent:'space-between'
 });
 
@@ -25,8 +24,11 @@ const Icon = styled('img', {
     border:'2px solid white',
     transition:'all 200ms',
 
-    '&:hover':{
-        opacity:1
+    '@desktop':{
+
+        '&:hover':{
+            opacity:1
+        },
     },
 
     variants:{

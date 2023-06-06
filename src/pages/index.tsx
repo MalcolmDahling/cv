@@ -7,6 +7,7 @@ import Nav from "@/components/Nav/Nav";
 import MiddleContainer from "@/components/MiddleContainer/MiddleContainer";
 import Content from "@/components/Content/Content";
 import Background from "@/components/Background/Background";
+import Intro from "@/components/Intro/Intro";
 
 const Wrapper = styled('div', {
 
@@ -37,6 +38,7 @@ export default function Index() {
 
     return (
         <Wrapper>
+            
             <Background></Background>
 
             <Main>

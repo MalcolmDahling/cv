@@ -19,6 +19,10 @@ export const {
             whiteHalfOpacity:'rgba(255,255,255,0.5)',
             gray:'rgb(60,60,60)',
             darkGray:'rgb(25,25,25)'
+        },
+
+        space:{
+            1:'10px'
         }
     },
 

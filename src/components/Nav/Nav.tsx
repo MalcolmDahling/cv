@@ -15,15 +15,15 @@ const StyledNav = styled('nav', {
     paddingBottom:4,
 
     '@tablet':{
-        paddingRight:10,
-        paddingLeft:10,
+        paddingRight:'$1',
+        paddingLeft:'$1',
     }
 });
 
 const Button = styled('button', {
 
     position:'relative',
-    paddingBottom:10,
+    paddingBottom:'$1',
     paddingLeft:20,
     width:'100%',
 
@@ -39,12 +39,15 @@ const Button = styled('button', {
     borderBottom:'1px solid $whiteHalfOpacity',
     transition:'all 350ms',
 
-    '&:hover':{
-        opacity:1,
-    },
+    '@desktop':{
 
-    '&:hover div':{
-        width:'100%'
+        '&:hover':{
+            opacity:1,
+        },
+    
+        '&:hover div':{
+            width:'100%'
+        },
     },
 
     variants:{

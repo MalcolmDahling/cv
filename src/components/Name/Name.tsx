@@ -3,7 +3,7 @@ import { styled } from "../../../stiches.config";
 
 const Div = styled('div', {
 
-    marginBottom:50,
+    marginBottom:20,
 
     display:'flex',
     flexDirection:'column',
@@ -14,7 +14,7 @@ const Div = styled('div', {
         marginTop:50,
         marginBottom:25,
 
-        gap:10,
+        gap:'$1',
 
         textAlign:'center'
     }

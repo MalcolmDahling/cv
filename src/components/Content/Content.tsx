@@ -10,7 +10,7 @@ const P = styled('p', {
     transition:'all 500ms',
 
     '@tablet':{
-        padding:10,
+        padding:'$1',
     },
 
     variants:{
@@ -29,8 +29,9 @@ const P = styled('p', {
 export default function Content(){
 
     const selectedNavItem = useRecoilValue(SelectedNavItem);
-    const [selectedItemAfterEffect, setSelectedItemAfterEffect] = useState(selectedNavItem);
+    const [selectedItemAfterAnim, setSelectedItemAfterAnim] = useState(0);
     const [show, setShow] = useState(true);
+    const [enableAnim, setEnableAnim] = useState(false);
 
     const content = [
         `Jag är en uppfinningsrik och kreativ person som lär sig snabbt och gärna tar mig an utmanande uppgifter där man får tänka lite.
@@ -63,19 +64,24 @@ export default function Content(){
 
     useEffect(() => {
 
-        setShow(false);
+        if(enableAnim){
 
-        setTimeout(() => {
+            setShow(false);
 
-            setSelectedItemAfterEffect(selectedNavItem);
-            setShow(true);
-        }, 800);
+            setTimeout(() => {
+
+                setSelectedItemAfterAnim(selectedNavItem);
+                setShow(true);
+            }, 600);
+        }
+
+        setEnableAnim(true);
 
     }, [selectedNavItem]);
 
     return(
         <P show={show}>
-            {content[selectedItemAfterEffect]}
+            {content[selectedItemAfterAnim]}
         </P>
     );
 }
