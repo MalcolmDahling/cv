@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 const P = styled('p', {
 
+    position:'relative',
     maxWidth:768,
     marginTop:35,
 
