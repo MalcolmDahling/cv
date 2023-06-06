@@ -14,9 +14,10 @@ const Div = styled('div', {
         marginTop:50,
         marginBottom:25,
 
+        alignItems:'center',
         gap:'$1',
 
-        textAlign:'center'
+        textAlign:'center',
     }
 });
 
@@ -46,15 +47,26 @@ const H2 = styled('h2', {
 
 const Email = styled(Link, {
 
+    width:'fit-content',
     margin:0,
 
     color:'$white',
     fontSize:20,
     textDecoration:'none',
 
-    '&:hover':{
-        textDecoration:'underline'
+    '&:hover div':{
+        width:'100%'
     }
+});
+
+const ExpandingLine = styled('div', {
+
+    height:1,
+    width:'0%',
+
+    transition:'all 250ms',
+    
+    backgroundColor:'$white'
 });
 
 export default function Name(){
@@ -63,7 +75,11 @@ export default function Name(){
         <Div>
             <H1>MALCOLM DAHLING</H1>
             <H2>FRONTEND DEVELOPER</H2>
-            <Email href="mailto:mac.dahling@gmail.com">mac.dahling@gmail.com</Email>
+            
+            <Email href="mailto:mac.dahling@gmail.com">
+                mac.dahling@gmail.com
+                <ExpandingLine></ExpandingLine>
+            </Email>
         </Div>
     );
 }

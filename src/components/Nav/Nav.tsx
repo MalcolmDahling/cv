@@ -1,6 +1,20 @@
 import { SelectedNavItem } from "@/atoms/SelectedNavItem";
-import { styled } from "../../../stiches.config";
+import { keyframes, styled } from "../../../stiches.config";
 import { useRecoilState } from "recoil";
+
+const FadeIn = keyframes({
+
+    '0%':{
+        width:'0%',
+        color:'transparent',
+        opacity:0,
+    },
+    '100%':{
+        width:'100%',
+        color:'$whiteHalfOpacity',
+        opacity:1
+    }
+});
 
 const StyledNav = styled('nav', {
 
@@ -15,6 +29,7 @@ const StyledNav = styled('nav', {
     paddingBottom:4,
 
     '@tablet':{
+        marginTop:10,
         paddingRight:'$1',
         paddingLeft:'$1',
     }
@@ -24,25 +39,25 @@ const Button = styled('button', {
 
     position:'relative',
     paddingBottom:'$1',
+    width:'0%',
     paddingLeft:20,
-    width:'100%',
 
     fontSize:24,
     fontFamily:'NeueHaasDisplayRoman',
     letterSpacing:1,
-    color:'$white',
-    opacity:0.5,
+    color:'transparent',
     textAlign:'start',
     cursor:'pointer',
     backgroundColor:'transparent',
     border:'none',
     borderBottom:'1px solid $whiteHalfOpacity',
-    transition:'all 350ms',
+    opacity:0,
+    animation:`${FadeIn} 1000ms forwards`,
 
     '@desktop':{
 
-        '&:hover':{
-            opacity:1,
+        '&:hover p':{
+            color:'$white !important'
         },
     
         '&:hover div':{
@@ -51,16 +66,56 @@ const Button = styled('button', {
     },
 
     variants:{
+
         selected:{
             true:{
-                opacity:1,
+                'p':{
+                    color:'$white !important',
+                },
 
                 'div':{
                     width:'100%'
                 }
             }
+        },
+
+        animationDelay:{
+            0:{
+                animationDelay:'400ms',
+            },
+
+            1:{
+                animationDelay:'600ms',
+            },
+
+            2:{
+                animationDelay:'800ms',
+            },
+
+            3:{
+                animationDelay:'1000ms',
+            },
+
+            4:{
+                animationDelay:'1200ms',
+            },
+
+            5:{
+                animationDelay:'1400ms',
+            },
+
+            6:{
+                animationDelay:'1600ms',
+            }
         }
     }
+});
+
+const P = styled('p', {
+
+    margin:0,
+
+    transition:'all 350ms',
 });
 
 const ExpandingLine = styled('div', {
@@ -72,7 +127,7 @@ const ExpandingLine = styled('div', {
     width:'0%',
 
     transition:'all 350ms',
-    background:'$white'
+    background:'$white',
 });
 
 export default function Nav(){
@@ -86,38 +141,38 @@ export default function Nav(){
 
     return(
         <StyledNav>
-            <Button onClick={() => {handleClick(0)}} selected={selectedNavItem === 0}>
-                PROFIL
+            <Button onClick={() => {handleClick(0)}} selected={selectedNavItem === 0} animationDelay={0}>
+                <P>PROFIL</P>
                 <ExpandingLine></ExpandingLine>
             </Button>
 
-            <Button onClick={() => {handleClick(1)}} selected={selectedNavItem === 1}>
-                UTBILDNING
+            <Button onClick={() => {handleClick(1)}} selected={selectedNavItem === 1} animationDelay={1}>
+                <P>UTBILDNING</P>
                 <ExpandingLine></ExpandingLine>
             </Button>
 
-            <Button onClick={() => {handleClick(2)}} selected={selectedNavItem === 2}>
-                PROGRAMMERING
+            <Button onClick={() => {handleClick(2)}} selected={selectedNavItem === 2} animationDelay={2}>
+                <P>PROGRAMMERING</P>
                 <ExpandingLine></ExpandingLine>
             </Button>
 
-            <Button onClick={() => {handleClick(3)}} selected={selectedNavItem === 3}>
-                KOMPETENSOMRÅDEN
+            <Button onClick={() => {handleClick(3)}} selected={selectedNavItem === 3} animationDelay={3}>
+                <P>KOMPETENSOMRÅDEN</P>
                 <ExpandingLine></ExpandingLine>
             </Button>
 
-            <Button onClick={() => {handleClick(4)}} selected={selectedNavItem === 4}>
-                PRAKTIK
+            <Button onClick={() => {handleClick(4)}} selected={selectedNavItem === 4} animationDelay={4}>
+                <P>PRAKTIK</P>
                 <ExpandingLine></ExpandingLine>
             </Button>
 
-            <Button onClick={() => {handleClick(5)}} selected={selectedNavItem === 5}>
-                SPRÅKKUNSKAPER
+            <Button onClick={() => {handleClick(5)}} selected={selectedNavItem === 5} animationDelay={5}>
+                <P>SPRÅKKUNSKAPER</P>
                 <ExpandingLine></ExpandingLine>
             </Button>
 
-            <Button onClick={() => {handleClick(6)}} selected={selectedNavItem === 6}>
-                ÖVRIGT
+            <Button onClick={() => {handleClick(6)}} selected={selectedNavItem === 6} animationDelay={6}>
+                <P>ÖVRIGT</P>
                 <ExpandingLine></ExpandingLine>
             </Button>
         </StyledNav>

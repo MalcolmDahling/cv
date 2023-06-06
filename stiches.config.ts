@@ -28,8 +28,8 @@ export const {
 
     media:{
 
-        desktop:'(min-width:801px)',
-        tablet:'(max-width:800px)',
+        desktop:'(min-width:810px)',
+        tablet:'(max-width:809px)',
         mobile:'(max-width:480px)'
     }
 });
