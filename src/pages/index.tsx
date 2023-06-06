@@ -42,6 +42,8 @@ export default function Index() {
     return (
         <Wrapper>
             
+            <Intro></Intro>
+            
             <Background></Background>
 
             <Main>
