@@ -42,8 +42,8 @@ const Background = styled('div', {
 
     backgroundColor:'black',
 
-    // animation:`${FadeOut} 1000ms forwards`,
-    // animationDelay:'5500ms',
+    animation:`${FadeOut} 1000ms forwards`,
+    animationDelay:'5500ms',
 });
 
 
