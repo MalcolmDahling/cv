@@ -81,31 +81,31 @@ const Button = styled('button', {
 
         animationDelay:{
             0:{
-                animationDelay:'400ms',
+                animationDelay:'6300ms',
             },
 
             1:{
-                animationDelay:'600ms',
+                animationDelay:'6500ms',
             },
 
             2:{
-                animationDelay:'800ms',
+                animationDelay:'6700ms',
             },
 
             3:{
-                animationDelay:'1000ms',
+                animationDelay:'6900ms',
             },
 
             4:{
-                animationDelay:'1200ms',
+                animationDelay:'7100ms',
             },
 
             5:{
-                animationDelay:'1400ms',
+                animationDelay:'7300ms',
             },
 
             6:{
-                animationDelay:'1600ms',
+                animationDelay:'7500ms',
             }
         }
     }
