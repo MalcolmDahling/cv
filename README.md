@@ -1,1 +1,1 @@
-<h1><a href="https://cv-malcolm-dahling.vercel.app/" align="center">LIVE WEBSITE</a></h1>
+<h1 align="center"><a href="https://cv-malcolm-dahling.vercel.app/">LIVE WEBSITE</a></h1>
