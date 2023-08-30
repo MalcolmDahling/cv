@@ -1,18 +1,22 @@
 @font-face {
-    font-family: NeueHaasDisplayRoman;
-    src: url('/fonts/NeueHaasDisplayRoman.ttf');
+  font-family: NeueHaasDisplayRoman;
+  src: url('/fonts/NeueHaasDisplayRoman.ttf');
 }
 
 @font-face {
-    font-family: NeutronsDemoRegular;
-    src: url('/fonts/NeutronsDemoRegular.ttf');
+  font-family: NeutronsDemoRegular;
+  src: url('/fonts/NeutronsDemoRegular.ttf');
 }
 
-html, body{
-    
-    margin:0;
+html,
+body {
+  margin: 0;
 
-    font-family: NeueHaasDisplayRoman;
-    letter-spacing: 2px;
-    color: var(--colors-white);
+  font-family: NeueHaasDisplayRoman;
+  letter-spacing: 2px;
+  color: var(--colors-white);
+}
+
+body {
+  overflow-y: scroll;
 }
