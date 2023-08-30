@@ -76,7 +76,7 @@ export default function Content() {
 
     //PROGRAMMERING
     <span>
-      HTML, CSS, javascript (vanilla, React, Angular, Typescript, Node.js).
+      HTML, CSS, javascript (vanilla, React (Next.js), Angular, Typescript, Node.js).
       <br />
       Har även grundläggande kunskaper inom C#, C++, PHP och SQL.
     </span>,
