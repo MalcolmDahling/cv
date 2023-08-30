@@ -48,10 +48,19 @@ export default function Content(){
 
         //UTBILDNING
         <span>
-            Jag har en Frontend Developer-examen från Medieinstitutet Yrkeshögskola.
-            Kurser som ingår i programmet: HTML/CSS, 20 yhp. Javascript, grundkurs, 40 yhp. Javascript, fördjupning, 60 yhp.
-            Kompetensportfölj och entreprenörskap, 10 yhp. Arbetsmetodik för utvecklare, 20 yhp. Arbeta med projekt i agila metoder, 15 yhp.
-            Dynamisk webbutveckling, 45 yhp. Grafiska verktyg för gränssnittsdesign, 15 yhp. LIA 1, 50 yhp. LIA 2, 80 yhp. UX/Usability, 15 yhp. Examensarbete, 30 yhp.
+            Jag har en Frontend Developer-examen från Medieinstitutet Yrkeshögskola.<br/><br/>
+            Kurser som ingår i programmet: <br/>
+            HTML/CSS, 20 yhp. Javascript, grundkurs, 40 yhp.<br/>
+            Javascript, fördjupning, 60 yhp.<br/>
+            Kompetensportfölj och entreprenörskap, 10 yhp.<br/>
+            Arbetsmetodik för utvecklare, 20 yhp.<br/>
+            Arbeta med projekt i agila metoder, 15 yhp.<br/>
+            Dynamisk webbutveckling, 45 yhp.<br/>
+            Grafiska verktyg för gränssnittsdesign, 15 yhp.<br/>
+            LIA 1, 50 yhp.<br/>
+            LIA 2, 80 yhp.<br/>
+            UX/Usability, 15 yhp.<br/>
+            Examensarbete, 30 yhp.<br/>
         </span>,
 
         //PROGRAMMERING
