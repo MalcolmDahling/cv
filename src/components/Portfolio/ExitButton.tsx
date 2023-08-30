@@ -5,7 +5,7 @@ import { SelectedNavItem } from '@/atoms/SelectedNavItem';
 const StyledButton = styled('button', {
   position: 'fixed',
   top: 10,
-  right: 25,
+  right: 10,
   padding: 0,
 
   cursor: 'pointer',
@@ -16,6 +16,10 @@ const StyledButton = styled('button', {
 
   '&:hover': {
     opacity: 1,
+  },
+
+  '@desktop': {
+    right: 25,
   },
 });
 

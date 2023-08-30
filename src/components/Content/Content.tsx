@@ -46,8 +46,11 @@ export default function Content() {
       Jag har en Frontend Developer-examen från Medieinstitutet Yrkeshögskola (2021-2023).
       <br />
       <br />
-      Kurser som ingick i programmet: <br />
-      HTML/CSS, 20 yhp. Javascript, grundkurs, 40 yhp.
+      Kurser som ingick i programmet:
+      <br />
+      HTML/CSS, 20 yhp.
+      <br />
+      Javascript, grundkurs, 40 yhp.
       <br />
       Javascript, fördjupning, 60 yhp.
       <br />
