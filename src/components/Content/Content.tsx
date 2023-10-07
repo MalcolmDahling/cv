@@ -75,7 +75,7 @@ export default function Content() {
 
     //PROGRAMMERING
     <span>
-      HTML, CSS, Javascript, Typescript, NodeJS, NextJS, JQuery, Angular, MongoDB, Sass, Git.
+      HTML, CSS, Javascript, Typescript, NodeJS, React, NextJS, JQuery, Angular, MongoDB, Sass, Git.
       <br />
       <br />
       Har även grundläggande kunskaper inom C#, C++, PHP och SQL.
