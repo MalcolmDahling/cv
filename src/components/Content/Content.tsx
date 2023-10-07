@@ -10,7 +10,6 @@ const Container = styled('div', {
 const P = styled('p', {
   maxWidth: 768,
   minHeight: 425,
-  marginTop: 35,
 
   transition: 'all 500ms',
 
@@ -76,7 +75,8 @@ export default function Content() {
 
     //PROGRAMMERING
     <span>
-      HTML, CSS, javascript (vanilla, React (Next.js), Angular, Typescript, Node.js).
+      HTML, CSS, Javascript, Typescript, NodeJS, NextJS, JQuery, Angular, MongoDB, Sass, Git.
+      <br />
       <br />
       Har även grundläggande kunskaper inom C#, C++, PHP och SQL.
     </span>,

@@ -9,6 +9,7 @@ import Content from '@/components/Content/Content';
 import Background from '@/components/Background/Background';
 import Intro from '@/components/Intro/Intro';
 import Portfolio from '@/components/Portfolio/Portfolio';
+import Skills from '@/components/Skills/Skills';
 
 const Wrapper = styled('div', {
   position: 'relative',
@@ -54,6 +55,8 @@ export default function Index() {
 
           <Nav></Nav>
         </MiddleContainer>
+
+        <Skills></Skills>
 
         <Content></Content>
       </Main>
