@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { styled } from '../../../stiches.config';
 
 const Section = styled('section', {
-  margin: '20px 0px',
+  margin: '30px 0px',
 
   display: 'flex',
   flexWrap: 'wrap',

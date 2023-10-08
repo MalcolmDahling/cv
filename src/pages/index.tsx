@@ -10,6 +10,7 @@ import Background from '@/components/Background/Background';
 import Intro from '@/components/Intro/Intro';
 import Portfolio from '@/components/Portfolio/Portfolio';
 import Skills from '@/components/Skills/Skills';
+import Head from 'next/head';
 
 const Wrapper = styled('div', {
   position: 'relative',
@@ -40,6 +41,34 @@ const Main = styled('main', {
 export default function Index() {
   return (
     <Wrapper>
+      <Head>
+        <title>Malcolm Dahling CV</title>
+        <meta
+          name="description"
+          content="Malcolm Dahling, Frontendutvecklare"
+        />
+        <meta
+          name="keywords"
+          content="frontend, developer, cv, frontend-developer, backend, html, css, javascript, typescript, nodejs, react, nextjs, jquery, angular, mongodb, sass, git, c#, c++, php, sql"
+        />
+        <meta
+          name="autor"
+          content="Malcolm Dahling"
+        />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        />
+        <link
+          rel="icon"
+          href="/images/favicon/favicon.png"
+          sizes="any"
+        ></link>
+        <link
+          rel="manifest"
+          href="/manifest.json"
+        ></link>
+      </Head>
       <Intro></Intro>
 
       <Background></Background>
