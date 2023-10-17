@@ -48,6 +48,10 @@ export default function Index() {
           content="nosnippet"
         />
         <meta
+          name="robots"
+          content="nosnippet"
+        />
+        <meta
           name="description"
           content="Malcolm Dahling, Frontendutvecklare"
         />
