@@ -69,7 +69,7 @@ export default function Index() {
         />
         <link
           rel="icon"
-          href="/images/favicon/favicon.png"
+          href="https://cv-malcolm-dahling.vercel.app/images/favicon/favicon.png"
           sizes="any"
         ></link>
         <link
