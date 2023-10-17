@@ -44,6 +44,10 @@ export default function Index() {
       <Head>
         <title>Malcolm Dahling CV</title>
         <meta
+          name="googlebot"
+          content="nosnippet"
+        />
+        <meta
           name="description"
           content="Malcolm Dahling, Frontendutvecklare"
         />
