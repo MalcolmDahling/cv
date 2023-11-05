@@ -90,18 +90,6 @@ export default function Skills() {
         alt="Illustrator"
         src="https://deviconapi.vercel.app/illustrator?theme=dark&size=30"
       />
-      <Img
-        alt="PHP"
-        src="https://deviconapi.vercel.app/php?theme=dark&size=30"
-      />
-      <Img
-        alt="C#"
-        src="https://deviconapi.vercel.app/csharp?theme=dark&size=30"
-      />
-      <Img
-        alt="C++"
-        src="https://deviconapi.vercel.app/cplusplus?theme=dark&size=30"
-      />
     </Section>
   );
 }
