@@ -86,6 +86,8 @@ export default function Content() {
 
     //PRAKTIK
     <span>
+      Frontendutvecklare - Kruso Digital, Juni 2023 - Pågående
+      <br />
       Frontendutvecklare - Kruso Digital, 10 veckor (LIA 1)
       <br />
       Frontendutvecklare - Kruso Digital, 16 veckor (LIA 2)
