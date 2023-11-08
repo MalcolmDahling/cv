@@ -57,7 +57,7 @@ export default function Index() {
         />
         <meta
           name="keywords"
-          content="frontend, developer, utvecklare, frontendutvecklare, frontend-utvecklare, cv, frontend-developer, backend, html, css, javascript, typescript, nodejs, react, nextjs, jquery, angular, mongodb, sass, git, c#, c++, php, sql"
+          content="frontend, developer, utvecklare, frontendutvecklare, frontend-utvecklare, cv, frontend-developer, backend, html, css, javascript, typescript, nodejs, react, nextjs, jquery, angular, mongodb, sass, git, sql"
         />
         <meta
           name="autor"
@@ -74,7 +74,7 @@ export default function Index() {
         ></link>
         <link
           rel="manifest"
-          href="/manifest.json"
+          href="../../manifest.json"
         ></link>
       </Head>
       <Intro></Intro>
