@@ -1,0 +1,10 @@
+{
+  "name": "Malcolm Dahling CV",
+  "icons": [
+    {
+      "src": "images/favicon/favicon_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 import { SelectedNavItem } from '@/atoms/SelectedNavItem';
-import { useRecoilValue } from 'recoil';
+import { useRecoilState } from 'recoil';
 import { styled } from '../../../stiches.config';
 import ExitButton from './ExitButton';
 import CardContainer from './CardContainer';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const Background = styled('div', {
   position: 'fixed',
@@ -45,10 +45,12 @@ const Container = styled('div', {
   position: 'absolute',
   inset: 0,
   padding: '0px 60px',
+  zIndex: 2,
 
   display: 'flex',
   justifyContent: 'center',
 
+  pointerEvents: 'none',
   overflowY: 'scroll',
 
   '@xlDesktop': {
@@ -58,9 +60,10 @@ const Container = styled('div', {
 });
 
 export default function Portfolio() {
-  const selectedNavItem = useRecoilValue(SelectedNavItem);
+  const [selectedNavItem, setSelectedNavItem] = useRecoilState(SelectedNavItem);
   const [show, setShow] = useState(false);
   const [displayNone, setDisplayNone] = useState(true);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (selectedNavItem === 6) {
@@ -78,11 +81,19 @@ export default function Portfolio() {
     }
   }, [selectedNavItem]);
 
+  function handleClick(e: React.MouseEvent) {
+    if (e.target === ref.current) {
+      setSelectedNavItem(0);
+    }
+  }
+
   return (
     <>
       <Background
         show={show}
         displayNone={displayNone}
+        ref={ref}
+        onClick={(e) => handleClick(e)}
       >
         <Container>
           <CardContainer></CardContainer>

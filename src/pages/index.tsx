@@ -53,11 +53,11 @@ export default function Index() {
         />
         <meta
           name="description"
-          content="Malcolm Dahling, Frontendutvecklare"
+          content="CV för Malcolm Dahling, Frontend Developer."
         />
         <meta
           name="keywords"
-          content="frontend, developer, utvecklare, frontendutvecklare, frontend-utvecklare, cv, frontend-developer, backend, html, css, javascript, typescript, nodejs, react, nextjs, jquery, angular, mongodb, sass, git, sql"
+          content="malcolm, dahling, frontend, developer, utvecklare, frontendutvecklare, frontend-utvecklare, cv, frontend-developer, backend, html, css, javascript, typescript, nodejs, react, nextjs, jquery, angular, mongodb, sass, git, sql"
         />
         <meta
           name="autor"
@@ -69,12 +69,17 @@ export default function Index() {
         />
         <link
           rel="icon"
-          href="https://cv-malcolm-dahling.vercel.app/images/favicon/favicon.png"
-          sizes="any"
+          href="/images/favicon/favicon_192x192.png"
+          sizes="192x192"
+        ></link>
+        <link
+          rel="apple-touch-icon"
+          href="/images/favicon/favicon_192x192.png"
+          sizes="192x192"
         ></link>
         <link
           rel="manifest"
-          href="../../manifest.json"
+          href="/manifest.json"
         ></link>
         <meta
           name="google-site-verification"
