@@ -76,6 +76,10 @@ export default function Index() {
           rel="manifest"
           href="../../manifest.json"
         ></link>
+        <meta
+          name="google-site-verification"
+          content="ANpZxTYl40WSTYB8jgI3J_XGgzAf0hKpnkJWecI54vM"
+        />
       </Head>
       <Intro></Intro>
 
