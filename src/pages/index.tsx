@@ -69,12 +69,12 @@ export default function Index() {
         />
         <link
           rel="icon"
-          href="/images/favicon/favicon_192x192.png"
+          href="/images/favicon/favicon_black_192x192.png"
           sizes="192x192"
         ></link>
         <link
           rel="apple-touch-icon"
-          href="/images/favicon/favicon_192x192.png"
+          href="/images/favicon/favicon_black_192x192.png"
           sizes="192x192"
         ></link>
         <link
