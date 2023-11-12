@@ -68,7 +68,10 @@ interface props {
 export default function Card(props: props) {
   return (
     <Container>
-      <StyledLink href={props.url}>
+      <StyledLink
+        href={props.url}
+        target="_blank"
+      >
         <Image src={props.image}></Image>
         <Name>{props.name}</Name>
       </StyledLink>

@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import { styled } from '../../../stiches.config';
+import SkillsItem from './SkillsItem';
 
 const Section = styled('section', {
   margin: '30px 0px',
@@ -8,8 +8,6 @@ const Section = styled('section', {
   flexWrap: 'wrap',
   gap: 10,
   justifyContent: 'space-between',
-
-  opacity: 0.5,
 
   '@tablet': {
     padding: '0px 10px',
@@ -20,74 +18,67 @@ const Section = styled('section', {
   },
 });
 
-const Img = styled('img', {
-  width: 30,
-  height: 30,
-
-  '@tablet': {},
-});
-
 export default function Skills() {
   return (
     <Section>
-      <Img
-        alt="HTML5"
+      <SkillsItem
+        tooltip="HTML"
         src="https://deviconapi.vercel.app/html5?theme=dark&size=30"
       />
-      <Img
-        alt="Javascript"
+      <SkillsItem
+        tooltip="Javascript"
         src="https://deviconapi.vercel.app/javascript?theme=dark&size=30"
       />
-      <Img
-        alt="Typescript"
+      <SkillsItem
+        tooltip="Typescript"
         src="https://deviconapi.vercel.app/typescript?theme=dark&size=30"
       />
-      <Img
-        alt="NodeJS"
+      <SkillsItem
+        tooltip="NodeJS"
         src="https://deviconapi.vercel.app/nodejs?theme=dark&size=30"
       />
-      <Img
-        alt="React"
+      <SkillsItem
+        tooltip="React"
         src="https://deviconapi.vercel.app/react?theme=dark&size=30"
       />
-      <Img
-        alt="NextJS"
+      <SkillsItem
+        tooltip="NextJS"
         src="https://deviconapi.vercel.app/nextjs?theme=dark&size=30"
       />
-      <Img
-        alt="JQuery"
+      <SkillsItem
+        tooltip="JQuery"
         src="https://deviconapi.vercel.app/jquery?theme=dark&size=30"
       />
-      <Img
-        alt="Angular"
+      <SkillsItem
+        tooltip="Angular"
         src="https://deviconapi.vercel.app/angularjs?theme=dark&size=30"
       />
-      <Img
-        alt="MySQL"
+      <SkillsItem
+        tooltip="MySQL"
         src="https://deviconapi.vercel.app/mysql?theme=dark&size=30"
       />
-      <Img
-        alt="MongoDB"
+      <SkillsItem
+        tooltip="MongoDB"
         src="https://deviconapi.vercel.app/mongodb?theme=dark&size=30"
       />
-      <Img
-        alt="SASS"
+      <SkillsItem
+        tooltip="SASS"
         src="https://deviconapi.vercel.app/sass?theme=dark&size=30"
       />
-      <Img
-        alt="Git"
+      <SkillsItem
+        tooltip="Git"
         src="https://deviconapi.vercel.app/git?theme=dark&size=30"
       />
-      <Img
-        alt="GitHub"
+      <SkillsItem
+        tooltip="GitHub"
         src="https://deviconapi.vercel.app/github?theme=dark&size=30"
       />
-      <Img
-        alt="Photoshop"
+      <SkillsItem
+        tooltip="Photoshop"
         src="https://deviconapi.vercel.app/photoshop?theme=dark&size=30"
       />
-      <Img
-        alt="Illustrator"
+      <SkillsItem
+        tooltip="Illustrator"
         src="https://deviconapi.vercel.app/illustrator?theme=dark&size=30"
       />
     </Section>

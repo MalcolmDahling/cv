@@ -86,7 +86,10 @@ export default function Contact() {
         <Tooltip text="Email"></Tooltip>
       </StyledLink>
 
-      <StyledLink href="https://www.linkedin.com/in/malcolm-dahling-175841222/">
+      <StyledLink
+        href="https://www.linkedin.com/in/malcolm-dahling-175841222/"
+        target="_blank"
+      >
         <Svg>
           <rect
             x="0"
@@ -102,7 +105,10 @@ export default function Contact() {
         <Tooltip text="LinkedIn"></Tooltip>
       </StyledLink>
 
-      <StyledLink href="https://github.com/MalcolmDahling/">
+      <StyledLink
+        href="https://github.com/MalcolmDahling/"
+        target="_blank"
+      >
         <Svg>
           <rect
             x="0"
