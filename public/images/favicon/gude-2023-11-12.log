@@ -1,2 +1,0 @@
-13:25:22:596 [WARN]	SSL certificate signed by unknown CA
-13:25:22:596 [WARN]	Request Failed. ErrorCode: 112175 errorMessage: Platform Status, INVALID_CA. Send Request Failed. WinHTTP Secure Failure. last error code = 12175 
