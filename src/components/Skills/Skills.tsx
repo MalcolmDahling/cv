@@ -6,15 +6,13 @@ const Section = styled('section', {
 
   display: 'flex',
   flexWrap: 'wrap',
-  gap: 10,
+  gap: 7,
   justifyContent: 'space-between',
 
   '@tablet': {
     padding: '0px 10px',
-  },
-
-  '@mobile': {
-    gap: '10px 2px',
+    justifyContent: 'center',
+    gap: '28px 7px',
   },
 });
 
@@ -46,12 +44,12 @@ export default function Skills() {
         src="https://deviconapi.vercel.app/nextjs?theme=dark&size=30"
       />
       <SkillsItem
-        tooltip="JQuery"
-        src="https://deviconapi.vercel.app/jquery?theme=dark&size=30"
-      />
-      <SkillsItem
         tooltip="Angular"
         src="https://deviconapi.vercel.app/angularjs?theme=dark&size=30"
+      />
+      <SkillsItem
+        tooltip="JQuery"
+        src="https://deviconapi.vercel.app/jquery?theme=dark&size=30"
       />
       <SkillsItem
         tooltip="MySQL"
