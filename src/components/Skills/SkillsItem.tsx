@@ -12,6 +12,7 @@ const Container = styled('div', {
   justifyContent: 'center',
   alignItems: 'center',
 
+  whiteSpace: 'nowrap',
   transition: 'all 200ms',
   opacity: 0.5,
 

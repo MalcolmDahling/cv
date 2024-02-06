@@ -6,8 +6,7 @@ const Section = styled('section', {
 
   display: 'flex',
   flexWrap: 'wrap',
-  gap: 7,
-  justifyContent: 'space-between',
+  gap: 1,
 
   '@tablet': {
     padding: '0px 10px',
@@ -78,6 +77,14 @@ export default function Skills() {
       <SkillsItem
         tooltip="Illustrator"
         src="https://deviconapi.vercel.app/illustrator?theme=dark&size=30"
+      />
+      <SkillsItem
+        tooltip="C++"
+        src="https://deviconapi.vercel.app/cplusplus?theme=dark&size=30"
+      />
+      <SkillsItem
+        tooltip="C#"
+        src="https://deviconapi.vercel.app/csharp?theme=dark&size=30"
       />
     </Section>
   );
