@@ -40,13 +40,18 @@ const H2 = styled('h2', {
   },
 });
 
-const Email = styled(Link, {
+const EmailButton = styled('button', {
+  position: 'relative',
   width: 'fit-content',
   margin: 0,
+  padding: 0,
 
+  border: 'none',
+  background: 'transparent',
   color: '$white',
   fontSize: 20,
   textDecoration: 'none',
+  cursor: 'pointer',
 
   '&:hover div': {
     width: '100%',
@@ -54,6 +59,8 @@ const Email = styled(Link, {
 });
 
 const ExpandingLine = styled('div', {
+  position: 'absolute',
+  bottom: 3,
   height: 1,
   width: '0%',
 
@@ -63,15 +70,19 @@ const ExpandingLine = styled('div', {
 });
 
 export default function Name() {
+  function handleClick() {
+    window.open('mailto' + ':' + 'mac' + '.' + 'dahling' + '@' + 'gmail' + '.' + 'com', '_blank');
+  }
+
   return (
     <Div>
       <H1>MALCOLM DAHLING</H1>
       <H2>FRONTEND DEVELOPER</H2>
 
-      <Email href="mailto:mac.dahling@gmail.com">
-        mac.dahling@gmail.com
+      <EmailButton onClick={handleClick}>
+        <img src="/images/email.png"></img>
         <ExpandingLine></ExpandingLine>
-      </Email>
+      </EmailButton>
     </Div>
   );
 }

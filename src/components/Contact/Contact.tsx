@@ -23,6 +23,30 @@ const StyledLink = styled(Link, {
   },
 });
 
+const StyledButton = styled('button', {
+  padding: 0,
+  position: 'relative',
+
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+
+  border: 'none',
+  backgroundColor: 'transparent',
+  cursor: 'pointer',
+  fontFamily: 'inherit',
+  fontSize: 16,
+  letterSpacing: 2,
+
+  '&:hover svg': {
+    strokeDashoffset: 0,
+  },
+
+  '&:hover p': {
+    opacity: 1,
+  },
+});
+
 const Icon = styled('img', {
   objectFit: 'none',
   width: 36,
@@ -53,16 +77,20 @@ const Icon = styled('img', {
 });
 
 export default function Contact() {
+  function handleClick() {
+    window.open('mailto' + ':' + 'mac' + '.' + 'dahling' + '@' + 'gmail' + '.' + 'com', '_blank');
+  }
+
   return (
     <Div>
-      <StyledLink href="mailto:mac.dahling@gmail.com">
+      <StyledButton onClick={handleClick}>
         <Icon
           src="/images/icons_36x36.webp"
           iconType="email"
         ></Icon>
 
         <Tooltip text="Email"></Tooltip>
-      </StyledLink>
+      </StyledButton>
 
       <StyledLink
         href="https://www.linkedin.com/in/malcolm-dahling-175841222/"

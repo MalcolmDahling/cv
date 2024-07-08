@@ -17,6 +17,10 @@ body {
   color: var(--colors-white);
 }
 
+* {
+  font-family: NeueHaasDisplayRoman;
+}
+
 body {
   overflow-y: scroll;
 }
