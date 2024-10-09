@@ -22,7 +22,7 @@ export default function CardContainer() {
   const cards = [
     { name: 'ISAK DAHLING MUSIC', image: 'images/portfolio/isak_dahling_music.png', url: 'https://isak-dahling-music.vercel.app/', github: 'https://github.com/MalcolmDahling/isak_dahling_music' },
     { name: 'MARKNADSKOLLEN', image: 'images/portfolio/marknadskollen.png', url: 'https://marknadskollen.vercel.app/' },
-    { name: 'GAMLA CV:T', image: 'images/portfolio/cv-react.png', url: 'https://malcolmdahling.github.io/cv_react/', github: 'https://github.com/MalcolmDahling/cv_react' },
+    //{ name: 'GAMLA CV:T', image: 'images/portfolio/cv-react.png', url: 'https://malcolmdahling.github.io/cv_react/', github: 'https://github.com/MalcolmDahling/cv_react' },
   ];
 
   return (

@@ -44,11 +44,12 @@ const Background = styled('div', {
 const Container = styled('div', {
   position: 'absolute',
   inset: 0,
-  padding: '0px 60px',
+  padding: '0px 30px',
   zIndex: 2,
 
   display: 'flex',
   justifyContent: 'center',
+  alignItems: 'center',
 
   pointerEvents: 'none',
   overflowY: 'scroll',
