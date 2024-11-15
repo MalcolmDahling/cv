@@ -37,8 +37,26 @@ export default function Content() {
   const [enableAnim, setEnableAnim] = useState(false);
 
   const content = [
-    //PROFIL
-    <span>Jag är en uppfinningsrik och kreativ person som lär sig snabbt och gärna tar mig an utmanande uppgifter där man får tänka lite. Mitt arbete kan ske efter instruktion eller med större frihet i uppgifter där det krävs. Jag kan jobba självständigt eller i grupp och tar gärna emot konstruktiv kritik för att förbättra mitt arbete. Problemlösning är även det en av mina starka sidor och jag hoppar gärna in och hjälper andra vid behov. I framtiden vill jag gärna se mig själv i en roll inom programmering och webbutveckling.</span>,
+    //ARBETSLIVSERFARENHET
+    <span>
+      Arbete
+      <br />
+      Kontorsassistent - Smartinfo Sweden AB - April 2024 - Pågående
+      <br />
+      <br />
+      Praktik
+      <br />
+      Frontendutvecklare - Kruso Digital, Juni 2023 - December 2023
+      <br />
+      Frontendutvecklare - Kruso Digital, 10 veckor (LIA 1)
+      <br />
+      Frontendutvecklare - Kruso Digital, 16 veckor (LIA 2)
+      <br />
+      Lödare och programmerare - LATAB
+      <br />
+      Installatör och programmerare - Service Databörsen AB
+      <br />
+    </span>,
 
     //UTBILDNING
     <span>
@@ -73,6 +91,9 @@ export default function Content() {
       <br />
     </span>,
 
+    //PROFIL
+    <span>Jag är en uppfinningsrik och kreativ person som lär sig snabbt och gärna tar mig an utmanande uppgifter där man får tänka lite. Mitt arbete kan ske efter instruktion eller med större frihet i uppgifter där det krävs. Jag kan jobba självständigt eller i grupp och tar gärna emot konstruktiv kritik för att förbättra mitt arbete. Problemlösning är även det en av mina starka sidor och jag hoppar gärna in och hjälper andra vid behov. I framtiden vill jag gärna se mig själv i en roll inom programmering och webbutveckling.</span>,
+
     //PROGRAMMERING
     <span>
       HTML, CSS, Javascript, Typescript, NodeJS, React, NextJS, JQuery, Angular, MongoDB, Sass, Git.
@@ -83,20 +104,6 @@ export default function Content() {
 
     //KOMPETENSOMRÅDEN
     <span>Mina ansvarsområden har varit allt ifrån programmering, grafisk design, webbutveckling och lödning till mer praktiska uppgifter som montering av kontorsmöbler och installation av elektrisk utrustning och datorer. Jag har också varit med och skapat en utställning på Sydostasiatiskamuséet där jag ansvarade för den tekniska delen med TV-apparater, datorer och nätverk.</span>,
-
-    //PRAKTIK
-    <span>
-      Frontendutvecklare - Kruso Digital, Juni 2023 - Pågående
-      <br />
-      Frontendutvecklare - Kruso Digital, 10 veckor (LIA 1)
-      <br />
-      Frontendutvecklare - Kruso Digital, 16 veckor (LIA 2)
-      <br />
-      Lödare och programmerare - LATAB
-      <br />
-      Installatör och programmerare - Service Databörsen AB
-      <br />
-    </span>,
 
     //ÖVRIGT
     <span>

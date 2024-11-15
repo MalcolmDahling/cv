@@ -63,6 +63,10 @@ const Button = styled('button', {
     },
   },
 
+  '@mobile': {
+    fontSize: 16,
+  },
+
   variants: {
     selected: {
       true: {
@@ -153,7 +157,7 @@ export default function Nav() {
         selected={selectedNavItem === 0}
         animationDelay={0}
       >
-        <P>PROFIL</P>
+        <P>ARBETSLIVSERFARENHET</P>
         <ExpandingLine></ExpandingLine>
       </Button>
 
@@ -175,7 +179,7 @@ export default function Nav() {
         selected={selectedNavItem === 2}
         animationDelay={2}
       >
-        <P>PROGRAMMERING</P>
+        <P>PROFIL</P>
         <ExpandingLine></ExpandingLine>
       </Button>
 
@@ -186,7 +190,7 @@ export default function Nav() {
         selected={selectedNavItem === 3}
         animationDelay={3}
       >
-        <P>KOMPETENSOMRÅDEN</P>
+        <P>PROGRAMMERING</P>
         <ExpandingLine></ExpandingLine>
       </Button>
 
@@ -197,7 +201,7 @@ export default function Nav() {
         selected={selectedNavItem === 4}
         animationDelay={4}
       >
-        <P>PRAKTIK</P>
+        <P>KOMPETENSOMRÅDEN</P>
         <ExpandingLine></ExpandingLine>
       </Button>
 
