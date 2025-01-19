@@ -41,18 +41,20 @@ export default function Content() {
     <span>
       Arbete
       <br />
-      Kontorsassistent - Smartinfo Sweden AB - April 2024 - Pågående
+      Kontorsassistent - Smartinfo Sweden AB | April 2024 - Pågående
+      <br />
+      Frontend-utvecklare - Uppdrag inom min firma | 1 September 2023 - 30 September 2023
       <br />
       <br />
       Praktik
       <br />
-      Frontendutvecklare - Kruso Digital, Juni 2023 - December 2023
+      Frontendutvecklare - Kruso Digital | Juni 2023 - December 2023
       <br />
-      Frontendutvecklare - Kruso Digital, 10 veckor (LIA 1)
+      Frontendutvecklare (LIA 1) - Kruso Digital | 10 veckor
       <br />
-      Frontendutvecklare - Kruso Digital, 16 veckor (LIA 2)
+      Frontendutvecklare (LIA 2) - Kruso Digital | 16 veckor
       <br />
-      Lödare och programmerare - LATAB
+      Lödare och programmerare - LATAB | Novermber 2019 - Oktober 2021
       <br />
       Installatör och programmerare - Service Databörsen AB
       <br />
