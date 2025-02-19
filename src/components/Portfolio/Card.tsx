@@ -75,7 +75,7 @@ export default function Card(props: props) {
         <Image src={props.image}></Image>
         <Name>{props.name}</Name>
       </StyledLink>
-      {props.github && <GithubLink href={props.github}>GITHUB</GithubLink>}
+      {props.github && <GithubLink href={props.github} target="_blank">GITHUB</GithubLink>}
     </Container>
   );
 }
