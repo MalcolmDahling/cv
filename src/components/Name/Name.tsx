@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { styled } from '../../../stiches.config';
 
 const Div = styled('div', {
@@ -22,10 +21,10 @@ const H1 = styled('h1', {
   margin: 0,
 
   color: '$white',
-  fontSize: 80,
+  fontSize: 77,
 
   '@tablet': {
-    fontSize: 60,
+    fontSize: 50,
   },
 });
 
