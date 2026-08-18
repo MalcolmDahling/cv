@@ -33,6 +33,10 @@ const Wrapper = styled('div', {
 const Main = styled('main', {
   maxWidth: 769,
 
+  '@desktop': {
+    width: 769,
+  },
+
   '@tablet': {
     paddingBottom: 25,
   },
