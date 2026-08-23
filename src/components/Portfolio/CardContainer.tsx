@@ -7,7 +7,7 @@ const Container = styled('div', {
   justifyContent: 'center',
   flexFlow: 'wrap',
 
-  marginTop: 70,
+  marginTop: 150,
   padding: '25px 0px',
 
   pointerEvents: 'none',
