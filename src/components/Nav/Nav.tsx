@@ -3,6 +3,7 @@ import { keyframes, styled } from '../../../stiches.config';
 import { useEffect } from 'react';
 import { useBreakpoint } from 'use-breakpoint';
 import { useAtom } from 'jotai';
+import { AnimationDelays } from '@/variables/animationDelays';
 
 const FadeIn = keyframes({
   '0%': {
@@ -80,31 +81,31 @@ const Button = styled('button', {
 
     animationDelay: {
       0: {
-        animationDelay: '6300ms',
+        animationDelay: `${AnimationDelays.nav0}ms`,
       },
 
       1: {
-        animationDelay: '6500ms',
+        animationDelay: `${AnimationDelays.nav1}ms`,
       },
 
       2: {
-        animationDelay: '6700ms',
+        animationDelay: `${AnimationDelays.nav2}ms`,
       },
 
       3: {
-        animationDelay: '6900ms',
+        animationDelay: `${AnimationDelays.nav3}ms`,
       },
 
       4: {
-        animationDelay: '7100ms',
+        animationDelay: `${AnimationDelays.nav4}ms`,
       },
 
       5: {
-        animationDelay: '7300ms',
+        animationDelay: `${AnimationDelays.nav5}ms`,
       },
 
       6: {
-        animationDelay: '7500ms',
+        animationDelay: `${AnimationDelays.nav6}ms`,
       },
     },
   },

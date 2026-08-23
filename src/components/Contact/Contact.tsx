@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { keyframes, styled } from '../../../stiches.config';
 import Tooltip from '../Tooltip/Tooltip';
+import { AnimationDelays } from '@/variables/animationDelays';
 
 const FadeIn = keyframes({
   '0%': {
@@ -96,7 +97,7 @@ export default function Contact() {
 
   return (
     <Div>
-      <AnimationContainer style={{ animation: `${FadeIn} 1000ms forwards`, animationDelay: '6300ms' }}>
+      <AnimationContainer style={{ animation: `${FadeIn} 1000ms forwards`, animationDelay: `${AnimationDelays.contact0}ms` }}>
         <StyledButton onClick={handleClick}>
           <Icon
             src="/images/icons_36x36.webp"
@@ -107,7 +108,7 @@ export default function Contact() {
         </StyledButton>
       </AnimationContainer>
 
-      <AnimationContainer style={{ animation: `${FadeIn} 1000ms forwards`, animationDelay: '6500ms' }}>
+      <AnimationContainer style={{ animation: `${FadeIn} 1000ms forwards`, animationDelay: `${AnimationDelays.contact1}ms` }}>
         <StyledLink
           href="https://www.linkedin.com/in/malcolm-dahling-175841222/"
           target="_blank"
@@ -122,7 +123,7 @@ export default function Contact() {
         </StyledLink>
       </AnimationContainer>
 
-      <AnimationContainer style={{ animation: `${FadeIn} 1000ms forwards`, animationDelay: '6700ms' }}>
+      <AnimationContainer style={{ animation: `${FadeIn} 1000ms forwards`, animationDelay: `${AnimationDelays.contact2}ms` }}>
         <StyledLink
           href="https://github.com/MalcolmDahling/"
           target="_blank"

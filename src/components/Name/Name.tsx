@@ -1,4 +1,11 @@
-import { styled } from '../../../stiches.config';
+import { AnimationDelays } from '@/variables/animationDelays';
+import { keyframes, styled } from '../../../stiches.config';
+import TypeIt from 'typeit-react';
+
+const FadeIn = keyframes({
+  '0%': { opacity: 0 },
+  '100%': { opacity: 1 },
+});
 
 const Div = styled('div', {
   marginBottom: 20,
@@ -52,6 +59,10 @@ const EmailButton = styled('button', {
   textDecoration: 'none',
   cursor: 'pointer',
 
+  opacity: 0,
+  animation: `${FadeIn} 1000ms forwards`,
+  animationDelay: `${AnimationDelays.email}ms`,
+
   '&:hover div': {
     width: '100%',
   },
@@ -75,8 +86,24 @@ export default function Name() {
 
   return (
     <Div>
-      <H1>MALCOLM DAHLING</H1>
-      <H2>FRONTEND DEVELOPER</H2>
+      <H1>
+        <TypeIt
+          options={{ cursor: false, lifeLike: true }}
+          getBeforeInit={(instance) => {
+            instance.pause(AnimationDelays.name).type('MALCOLM DAHLING');
+            return instance;
+          }}
+        ></TypeIt>
+      </H1>
+      <H2>
+        <TypeIt
+          options={{ cursor: false, lifeLike: true }}
+          getBeforeInit={(instance) => {
+            instance.pause(AnimationDelays.title).type('FRONTEND DEVELOPER');
+            return instance;
+          }}
+        ></TypeIt>
+      </H2>
 
       <EmailButton onClick={handleClick}>
         <img src="/images/email.png"></img>

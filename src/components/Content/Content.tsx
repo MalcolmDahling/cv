@@ -1,10 +1,20 @@
 import { SelectedNavItem } from '@/atoms/SelectedNavItem';
-import { styled } from '../../../stiches.config';
+import { keyframes, styled } from '../../../stiches.config';
 import { useEffect, useState } from 'react';
 import { useAtomValue } from 'jotai';
+import { AnimationDelays } from '@/variables/animationDelays';
+
+const FadeIn = keyframes({
+  '0%': { opacity: 0 },
+  '100%': { opacity: 1 },
+});
 
 const Container = styled('div', {
   position: 'relative',
+
+  opacity: 0,
+  animation: `${FadeIn} 1000ms forwards`,
+  animationDelay: `${AnimationDelays.content}ms`,
 });
 
 const P = styled('p', {

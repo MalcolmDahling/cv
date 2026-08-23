@@ -39,7 +39,7 @@ const Background = styled('div', {
   backgroundColor: 'black',
 
   animation: `${FadeOut} 1000ms forwards`,
-  animationDelay: '5500ms',
+  animationDelay: '5000ms',
 });
 
 const LogoContainer = styled('div', {

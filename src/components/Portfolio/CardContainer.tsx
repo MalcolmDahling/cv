@@ -10,7 +10,6 @@ const Container = styled('div', {
 
   padding: '60px 20px 20px 20px',
   pointerEvents: 'none',
-  border: '1px solid red',
 
   '@tablet': {},
 
