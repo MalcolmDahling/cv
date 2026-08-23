@@ -7,6 +7,7 @@ const StyledButton = styled('button', {
   top: 10,
   right: 10,
   padding: 0,
+  zIndex: 1000,
 
   cursor: 'pointer',
   backgroundColor: 'transparent',
@@ -16,10 +17,6 @@ const StyledButton = styled('button', {
 
   '&:hover': {
     opacity: 1,
-  },
-
-  '@desktop': {
-    right: 25,
   },
 });
 
@@ -49,6 +46,9 @@ export default function ExitButton() {
             fill="#ffffff"
             fillRule="evenodd"
             clipRule="evenodd"
+            stroke="#000000"
+            strokeWidth="1"
+            paintOrder="stroke fill"
           ></path>
         </svg>
       </SVG>

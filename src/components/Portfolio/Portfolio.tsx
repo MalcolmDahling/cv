@@ -2,18 +2,13 @@ import { SelectedNavItem } from '@/atoms/SelectedNavItem';
 import { styled } from '../../../stiches.config';
 import ExitButton from './ExitButton';
 import CardContainer from './CardContainer';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useAtom } from 'jotai';
 
 const Background = styled('div', {
   position: 'fixed',
   inset: 0,
   zIndex: 1,
-  padding: 20,
-
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
 
   opacity: 0,
   backgroundColor: '$blackHalfOpacity',
@@ -44,18 +39,17 @@ const Background = styled('div', {
 const Container = styled('div', {
   position: 'absolute',
   inset: 0,
-  padding: '0px 30px',
   zIndex: 2,
 
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-
-  pointerEvents: 'none',
   overflowY: 'scroll',
 
-  '@xlDesktop': {
+  '@desktop': {
+    display: 'flex',
+    justifyContent: 'center',
     alignItems: 'center',
+  },
+
+  '@xlDesktop': {
     overflowY: 'auto',
   },
 });
@@ -64,7 +58,6 @@ export default function Portfolio() {
   const [selectedNavItem, setSelectedNavItem] = useAtom(SelectedNavItem);
   const [show, setShow] = useState(false);
   const [displayNone, setDisplayNone] = useState(true);
-  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (selectedNavItem === 6) {
@@ -83,9 +76,7 @@ export default function Portfolio() {
   }, [selectedNavItem]);
 
   function handleClick(e: React.MouseEvent) {
-    if (e.target === ref.current) {
-      setSelectedNavItem(0);
-    }
+    setSelectedNavItem(0);
   }
 
   return (
@@ -93,10 +84,9 @@ export default function Portfolio() {
       <Background
         show={show}
         displayNone={displayNone}
-        ref={ref}
         onClick={(e) => handleClick(e)}
       >
-        <Container>
+        <Container onClick={(e) => handleClick(e)}>
           <CardContainer></CardContainer>
         </Container>
         <ExitButton></ExitButton>

@@ -5,12 +5,14 @@ const Container = styled('div', {
   display: 'flex',
   gap: 20,
   justifyContent: 'center',
-  flexFlow: 'wrap',
+  alignItems: 'flex-start',
+  flexWrap: 'wrap',
 
-  marginTop: 150,
-  padding: '25px 0px',
-
+  padding: '60px 20px 20px 20px',
   pointerEvents: 'none',
+  border: '1px solid red',
+
+  '@tablet': {},
 
   '@desktop': {
     '&:hover div': {

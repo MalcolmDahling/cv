@@ -5,6 +5,7 @@ const Container = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
+  gap: 10,
 
   transition: 'all 500ms',
   pointerEvents: 'auto',
@@ -71,11 +72,20 @@ export default function Card(props: props) {
       <StyledLink
         href={props.url}
         target="_blank"
+        onClick={(e) => e.stopPropagation()}
       >
         <Image src={props.image}></Image>
         <Name>{props.name}</Name>
       </StyledLink>
-      {props.github && <GithubLink href={props.github} target="_blank">GITHUB</GithubLink>}
+      {props.github && (
+        <GithubLink
+          href={props.github}
+          target="_blank"
+          onClick={(e) => e.stopPropagation()}
+        >
+          GITHUB
+        </GithubLink>
+      )}
     </Container>
   );
 }

@@ -18,8 +18,8 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
 
   media: {
     xlDesktop: '(min-width:1000px)',
-    desktop: '(min-width:810px)',
-    tablet: '(max-width:809px)',
+    desktop: '(min-width:862px)',
+    tablet: '(max-width:861px)',
     mobile: '(max-width:480px)',
   },
 });
