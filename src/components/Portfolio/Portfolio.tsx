@@ -1,9 +1,9 @@
 import { SelectedNavItem } from '@/atoms/SelectedNavItem';
-import { useRecoilState } from 'recoil';
 import { styled } from '../../../stiches.config';
 import ExitButton from './ExitButton';
 import CardContainer from './CardContainer';
 import React, { useEffect, useRef, useState } from 'react';
+import { useAtom } from 'jotai';
 
 const Background = styled('div', {
   position: 'fixed',
@@ -61,7 +61,7 @@ const Container = styled('div', {
 });
 
 export default function Portfolio() {
-  const [selectedNavItem, setSelectedNavItem] = useRecoilState(SelectedNavItem);
+  const [selectedNavItem, setSelectedNavItem] = useAtom(SelectedNavItem);
   const [show, setShow] = useState(false);
   const [displayNone, setDisplayNone] = useState(true);
   const ref = useRef<HTMLDivElement>(null);

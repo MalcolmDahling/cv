@@ -1,7 +1,7 @@
 import { SelectedNavItem } from '@/atoms/SelectedNavItem';
-import { useRecoilValue } from 'recoil';
 import { styled } from '../../../stiches.config';
 import { useEffect, useState } from 'react';
+import { useAtomValue } from 'jotai';
 
 const Container = styled('div', {
   position: 'relative',
@@ -31,7 +31,7 @@ const P = styled('p', {
 });
 
 export default function Content() {
-  const selectedNavItem = useRecoilValue(SelectedNavItem);
+  const selectedNavItem = useAtomValue(SelectedNavItem);
   const [selectedItemAfterAnim, setSelectedItemAfterAnim] = useState(0);
   const [show, setShow] = useState(true);
   const [enableAnim, setEnableAnim] = useState(false);

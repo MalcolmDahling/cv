@@ -1,8 +1,8 @@
 import { SelectedNavItem } from '@/atoms/SelectedNavItem';
 import { keyframes, styled } from '../../../stiches.config';
-import { useRecoilState } from 'recoil';
 import { useEffect } from 'react';
 import { useBreakpoint } from 'use-breakpoint';
+import { useAtom } from 'jotai';
 
 const FadeIn = keyframes({
   '0%': {
@@ -130,7 +130,7 @@ const ExpandingLine = styled('div', {
 const BREAKPOINTS = { mobile: 0, tablet: 809, desktop: 1000 };
 
 export default function Nav() {
-  const [selectedNavItem, setSelectedNavItem] = useRecoilState(SelectedNavItem);
+  const [selectedNavItem, setSelectedNavItem] = useAtom(SelectedNavItem);
   const { breakpoint } = useBreakpoint(BREAKPOINTS, 'desktop');
 
   function handleClick(item: number) {

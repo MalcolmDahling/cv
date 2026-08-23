@@ -1,4 +1,4 @@
-import { useRecoilState } from 'recoil';
+import { useAtom } from 'jotai';
 import { styled } from '../../../stiches.config';
 import { SelectedNavItem } from '@/atoms/SelectedNavItem';
 
@@ -29,7 +29,7 @@ const SVG = styled('svg', {
 });
 
 export default function ExitButton() {
-  const [selectedNavItem, setSelectedNavItem] = useRecoilState(SelectedNavItem);
+  const [selectedNavItem, setSelectedNavItem] = useAtom(SelectedNavItem);
 
   function handleExit() {
     setSelectedNavItem(0);

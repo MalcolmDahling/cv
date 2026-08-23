@@ -1,6 +1,3 @@
-import { atom } from 'recoil';
+import { atom } from 'jotai';
 
-export const SelectedNavItem = atom({
-  key: 'SelectedNavItem',
-  default: 0,
-});
+export const SelectedNavItem = atom(0);
