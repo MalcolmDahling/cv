@@ -7,12 +7,10 @@ import { useBreakpoint } from 'use-breakpoint';
 const FadeIn = keyframes({
   '0%': {
     width: '0%',
-    color: 'transparent',
     opacity: 0,
   },
   '100%': {
     width: '100%',
-    color: '$whiteHalfOpacity',
     opacity: 1,
   },
 });
@@ -44,7 +42,7 @@ const Button = styled('button', {
   fontSize: 24,
   fontFamily: 'NeueHaasDisplayRoman',
   letterSpacing: 1,
-  color: 'transparent',
+  color: '$whiteHalfOpacity',
   textAlign: 'start',
   cursor: 'pointer',
   backgroundColor: 'transparent',
@@ -115,7 +113,7 @@ const Button = styled('button', {
 const P = styled('p', {
   margin: 0,
 
-  transition: 'all 350ms',
+  transition: 'color 350ms',
 });
 
 const ExpandingLine = styled('div', {
