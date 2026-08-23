@@ -22,62 +22,77 @@ export default function Skills() {
       <SkillsItem
         tooltip="HTML"
         src="https://deviconapi.vercel.app/html5?theme=dark&size=30"
+        animationDelay={6300}
       />
       <SkillsItem
         tooltip="Javascript"
         src="https://deviconapi.vercel.app/javascript?theme=dark&size=30"
+        animationDelay={6500}
       />
       <SkillsItem
         tooltip="Typescript"
         src="https://deviconapi.vercel.app/typescript?theme=dark&size=30"
+        animationDelay={6700}
       />
       <SkillsItem
         tooltip="NodeJS"
         src="https://deviconapi.vercel.app/nodejs?theme=dark&size=30"
+        animationDelay={6900}
       />
       <SkillsItem
         tooltip="React"
         src="https://deviconapi.vercel.app/react?theme=dark&size=30"
+        animationDelay={7100}
       />
       <SkillsItem
         tooltip="NextJS"
         src="https://deviconapi.vercel.app/nextjs?theme=dark&size=30"
+        animationDelay={7300}
       />
       <SkillsItem
         tooltip="Angular"
         src="https://deviconapi.vercel.app/angularjs?theme=dark&size=30"
+        animationDelay={7500}
       />
       <SkillsItem
         tooltip="JQuery"
         src="https://deviconapi.vercel.app/jquery?theme=dark&size=30"
+        animationDelay={7700}
       />
       <SkillsItem
         tooltip="MySQL"
         src="https://deviconapi.vercel.app/mysql?theme=dark&size=30"
+        animationDelay={7900}
       />
       <SkillsItem
         tooltip="MongoDB"
         src="https://deviconapi.vercel.app/mongodb?theme=dark&size=30"
+        animationDelay={8100}
       />
       <SkillsItem
         tooltip="SASS"
         src="https://deviconapi.vercel.app/sass?theme=dark&size=30"
+        animationDelay={8300}
       />
       <SkillsItem
         tooltip="Git"
         src="https://deviconapi.vercel.app/git?theme=dark&size=30"
+        animationDelay={8500}
       />
       <SkillsItem
         tooltip="GitHub"
         src="https://deviconapi.vercel.app/github?theme=dark&size=30"
+        animationDelay={8700}
       />
       <SkillsItem
         tooltip="Photoshop"
         src="https://deviconapi.vercel.app/photoshop?theme=dark&size=30"
+        animationDelay={8900}
       />
       <SkillsItem
         tooltip="Illustrator"
         src="https://deviconapi.vercel.app/illustrator?theme=dark&size=30"
+        animationDelay={9100}
       />
     </Section>
   );

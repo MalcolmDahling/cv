@@ -1,10 +1,23 @@
 import Link from 'next/link';
-import { styled } from '../../../stiches.config';
+import { keyframes, styled } from '../../../stiches.config';
 import Tooltip from '../Tooltip/Tooltip';
+
+const FadeIn = keyframes({
+  '0%': {
+    opacity: 0,
+  },
+  '100%': {
+    opacity: 1,
+  },
+});
 
 const Div = styled('div', {
   display: 'flex',
   justifyContent: 'space-between',
+});
+
+const AnimationContainer = styled('div', {
+  opacity: 0,
 });
 
 const StyledLink = styled(Link, {
@@ -83,38 +96,46 @@ export default function Contact() {
 
   return (
     <Div>
-      <StyledButton onClick={handleClick}>
-        <Icon
-          src="/images/icons_36x36.webp"
-          iconType="email"
-        ></Icon>
+      <AnimationContainer style={{ animation: `${FadeIn} 1000ms forwards`, animationDelay: '6300ms' }}>
+        <StyledButton onClick={handleClick}>
+          <Icon
+            src="/images/icons_36x36.webp"
+            iconType="email"
+          ></Icon>
 
-        <Tooltip text="Email"></Tooltip>
-      </StyledButton>
+          <Tooltip text="Email"></Tooltip>
+        </StyledButton>
+      </AnimationContainer>
 
-      <StyledLink
-        href="https://www.linkedin.com/in/malcolm-dahling-175841222/"
-        target="_blank"
-      >
-        <Icon
-          src="/images/icons_36x36.webp"
-          iconType="linkedIn"
-        ></Icon>
+      <AnimationContainer style={{ animation: `${FadeIn} 1000ms forwards`, animationDelay: '6500ms' }}>
+        <StyledLink
+          href="https://www.linkedin.com/in/malcolm-dahling-175841222/"
+          target="_blank"
+          style={{ animation: `${FadeIn} 1000ms forwards`, animationDelay: `6500ms` }}
+        >
+          <Icon
+            src="/images/icons_36x36.webp"
+            iconType="linkedIn"
+          ></Icon>
 
-        <Tooltip text="LinkedIn"></Tooltip>
-      </StyledLink>
+          <Tooltip text="LinkedIn"></Tooltip>
+        </StyledLink>
+      </AnimationContainer>
 
-      <StyledLink
-        href="https://github.com/MalcolmDahling/"
-        target="_blank"
-      >
-        <Icon
-          src="/images/icons_36x36.webp"
-          iconType="gitHub"
-        ></Icon>
+      <AnimationContainer style={{ animation: `${FadeIn} 1000ms forwards`, animationDelay: '6700ms' }}>
+        <StyledLink
+          href="https://github.com/MalcolmDahling/"
+          target="_blank"
+          style={{ animation: `${FadeIn} 1000ms forwards`, animationDelay: `6700ms` }}
+        >
+          <Icon
+            src="/images/icons_36x36.webp"
+            iconType="gitHub"
+          ></Icon>
 
-        <Tooltip text="GitHub"></Tooltip>
-      </StyledLink>
+          <Tooltip text="GitHub"></Tooltip>
+        </StyledLink>
+      </AnimationContainer>
     </Div>
   );
 }
