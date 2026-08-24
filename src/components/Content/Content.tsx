@@ -1,6 +1,6 @@
 import { SelectedNavItem } from '@/atoms/SelectedNavItem';
 import { keyframes, styled } from '../../../stiches.config';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useAtomValue } from 'jotai';
 import { AnimationDelays } from '@/variables/animationDelays';
 
@@ -42,9 +42,15 @@ const P = styled('p', {
 
 export default function Content() {
   const selectedNavItem = useAtomValue(SelectedNavItem);
-  const [selectedItemAfterAnim, setSelectedItemAfterAnim] = useState(0);
+
   const [show, setShow] = useState(true);
-  const [enableAnim, setEnableAnim] = useState(false);
+  const [displayedItem, setDisplayedItem] = useState(0);
+
+  const latestItem = useRef(selectedNavItem);
+  const isAnimating = useRef(false);
+  const displayedItemRef = useRef(0);
+
+  const FADE_DURATION = 500;
 
   const content = [
     //ARBETSLIVSERFARENHET
@@ -128,21 +134,43 @@ export default function Content() {
   ];
 
   useEffect(() => {
-    if (enableAnim) {
-      setShow(false);
+    latestItem.current = selectedNavItem;
 
-      setTimeout(() => {
-        setSelectedItemAfterAnim(selectedNavItem);
+    if (isAnimating.current) return;
+
+    const animate = async () => {
+      isAnimating.current = true;
+
+      while (displayedItemRef.current !== latestItem.current) {
+        setShow(false);
+
+        await new Promise((resolve) => {
+          setTimeout(resolve, FADE_DURATION);
+        });
+
+        const nextItem = latestItem.current;
+
+        setDisplayedItem(nextItem);
+        displayedItemRef.current = nextItem;
+
         setShow(true);
-      }, 600);
-    }
 
-    setEnableAnim(true);
+        await new Promise((resolve) => {
+          setTimeout(resolve, FADE_DURATION);
+        });
+      }
+
+      isAnimating.current = false;
+    };
+
+    animate();
   }, [selectedNavItem]);
 
   return (
     <Container>
-      <P show={show}>{content[selectedItemAfterAnim]}</P>
+      <Container>
+        <P show={show}>{content[displayedItem]}</P>
+      </Container>
     </Container>
   );
 }

@@ -1,6 +1,7 @@
 import { AnimationDelays } from '@/variables/animationDelays';
 import { keyframes, styled } from '../../../stiches.config';
 import TypeIt from 'typeit-react';
+import { useState } from 'react';
 
 const FadeIn = keyframes({
   '0%': { opacity: 0 },
@@ -37,6 +38,7 @@ const H1 = styled('h1', {
 
 const H2 = styled('h2', {
   margin: 0,
+  minHeight: 46,
 
   color: '$white',
   fontSize: 40,
@@ -80,6 +82,8 @@ const ExpandingLine = styled('div', {
 });
 
 export default function Name() {
+  const [nameDone, setNameDone] = useState(false);
+
   function handleClick() {
     window.open('mailto' + ':' + 'mac' + '.' + 'dahling' + '@' + 'gmail' + '.' + 'com', '_blank');
   }
@@ -88,7 +92,19 @@ export default function Name() {
     <Div>
       <H1>
         <TypeIt
-          options={{ cursor: false, lifeLike: true }}
+          options={{
+            cursor: true,
+            speed: 50,
+            afterComplete: (instance: any) => {
+              const cursor = instance.getElement().querySelector('.ti-cursor');
+
+              if (cursor instanceof HTMLElement) {
+                cursor.style.display = 'none';
+              }
+
+              setNameDone(true);
+            },
+          }}
           getBeforeInit={(instance) => {
             instance.pause(AnimationDelays.name).type('MALCOLM DAHLING');
             return instance;
@@ -96,13 +112,25 @@ export default function Name() {
         ></TypeIt>
       </H1>
       <H2>
-        <TypeIt
-          options={{ cursor: false, lifeLike: true }}
-          getBeforeInit={(instance) => {
-            instance.pause(AnimationDelays.title).type('FRONTEND DEVELOPER');
-            return instance;
-          }}
-        ></TypeIt>
+        {nameDone && (
+          <TypeIt
+            options={{
+              cursor: true,
+              speed: 50,
+              afterComplete: (instance: any) => {
+                const cursor = instance.getElement().querySelector('.ti-cursor');
+
+                if (cursor instanceof HTMLElement) {
+                  cursor.style.display = 'none';
+                }
+              },
+            }}
+            getBeforeInit={(instance) => {
+              instance.type('FRONTEND DEVELOPER');
+              return instance;
+            }}
+          ></TypeIt>
+        )}
       </H2>
 
       <EmailButton onClick={handleClick}>

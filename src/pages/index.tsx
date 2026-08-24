@@ -11,6 +11,8 @@ import Intro from '@/components/Intro/Intro';
 import Portfolio from '@/components/Portfolio/Portfolio';
 import Skills from '@/components/Skills/Skills';
 import Head from 'next/head';
+import { useEffect } from 'react';
+import { AnimationDelays } from '@/variables/animationDelays';
 
 const Wrapper = styled('div', {
   position: 'relative',
@@ -43,6 +45,29 @@ const Main = styled('main', {
 });
 
 export default function Index() {
+  useEffect(() => {
+    const isDesktop = window.matchMedia('(min-width:862px)').matches;
+
+    if (isDesktop) {
+      document.body.style.overflow = 'hidden';
+    }
+
+    document.body.style.userSelect = 'none';
+    document.body.style.pointerEvents = 'none';
+
+    setTimeout(() => {
+      document.body.style.overflow = '';
+      document.body.style.userSelect = '';
+      document.body.style.pointerEvents = '';
+    }, AnimationDelays.allAnimsDone);
+
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.userSelect = '';
+      document.body.style.pointerEvents = '';
+    };
+  }, []);
+
   return (
     <Wrapper>
       <Head>
