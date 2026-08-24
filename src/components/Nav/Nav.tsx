@@ -128,7 +128,7 @@ const ExpandingLine = styled('div', {
   background: '$white',
 });
 
-const BREAKPOINTS = { mobile: 0, tablet: 809, desktop: 1000 };
+const BREAKPOINTS = { mobile: 0, tablet: 861, desktop: 1000 };
 
 export default function Nav() {
   const [selectedNavItem, setSelectedNavItem] = useAtom(SelectedNavItem);
